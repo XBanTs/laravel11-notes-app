@@ -1,5 +1,6 @@
 HOW TO LAUNCH?
 (Basic understanding of php and object oreiented programming is needed)
+(There is also an alternative installation procedure after thr first one)
 
 Make sure you have the composer dependency installed.
 Install nodejs including npm.
@@ -17,3 +18,18 @@ Confirm your e-mail address using the instructions in your laravel.log file (fou
 VOILA, START WORKING ON SOME NEW NOTES!!
 
 Feel free to ask me some questions or query if there is an error.
+
+
+Alternative Installation 
+
+
+Installation
+Clone the project
+Navigate to the project's root directory using terminal
+Create .env file - cp .env.example .env
+Execute composer install
+Execute npm install
+Set application key - php artisan key:generate --ansi
+Execute migrations and seed data - php artisan migrate --seed
+Start vite server - npm run dev
+Start Artisan server - php artisan serve
